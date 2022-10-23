@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    overflow-x: hidden;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+// custom antd
+#create-job .ant-form.ant-form-horizontal {
+  width: 100%;
+}
+#create-job {
+  .ant-switch.ant-switch-checked {
+    background-color: #1890ff !important;
+  }
+}
+#create-user {
+  .ant-switch.ant-switch-checked {
+    background-color: #1890ff !important;
+  }
+  
+}
+
+#user-action-item {
+  .ant-btn.ant-btn-primary {
+    background-color: #1890ff !important;
+  }
+  .ant-btn.ant-btn-primary.ant-btn-dangerous {
+    background-color: #ff4d4f !important;
+  }
+}
